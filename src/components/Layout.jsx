@@ -12,30 +12,18 @@ const Layout = ({ children }) => {
         <Navbar />
       </div>
 
-    /* Mobile Topbar */
-        <div className="md:hidden fixed top-0 left-0 w-full h-[64px] bg-white border-b-2 flex items-center justify-between px-4 z-50">
-          <img
-            src="/images/NetCom.png"
-            alt="NetCom company logo with stylized text, displayed on a clean white background at the top of the mobile navigation bar"
-            className="w-[120px]"
-          />
-          <div className="flex items-center gap-4">
-            <img
-            src="/images/bell-icon.png"
-            alt="Notification bell icon indicating alerts, located in the mobile navigation bar"
-            className="w-6 h-6"
-            />
-            <button onClick={() => setMobileMenuOpen(true)}>
-            <img
-              src="/images/menu.png"
-              alt="Menu icon with three horizontal lines, opens the mobile sidebar navigation drawer"
-              className="w-6 h-6"
-            />
-            </button>
-          </div>
+      {/* Mobile Topbar */}
+      <div className="md:hidden fixed top-0 left-0 w-full h-[64px] bg-white border-b-2 flex items-center justify-between px-4 z-50">
+        <img src="/images/NetCom.png" alt="Logo" className="w-[120px]" />
+        <div className="flex items-center gap-4">
+          <img src="/images/bell-icon.png" alt="bell" className="w-6 h-6" />
+          <button onClick={() => setMobileMenuOpen(true)}>
+            <img src="/images/menu.png" alt="menu" className="w-6 h-6" />
+          </button>
         </div>
+      </div>
 
-        {/* Desktop Sidebar */}
+      {/* Desktop Sidebar */}
       <div className="hidden md:block fixed top-[64px] left-0 w-[244px] h-[calc(100vh-64px)] z-40">
         <Sidebar />
       </div>
