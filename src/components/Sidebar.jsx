@@ -34,21 +34,23 @@ const Sidebar = () => {
 
         <div>
           <ul className="flex flex-col gap-3 text-sm">
-            {["e-Learning", "Course Catalog", "Resources"].map((text, idx) => (
-              <li
-                key={idx}
-                className="flex items-center gap-2 group hover:bg-[#0876f8] p-2 rounded cursor-pointer transition"
-              >
-                <img
-                  src="/images/dashboard.png"
-                  alt={`${text} Icon`}
-                  className="w-6 h-6 transition duration-200 group-hover:brightness-0 group-hover:invert"
-                />
-                <span className="transition-colors duration-200 group-hover:text-white">
-                  {text}
-                </span>
-              </li>
-            ))}
+            {["Help center", "Settings", "Training classes"].map(
+              (text, idx) => (
+                <li
+                  key={idx}
+                  className="flex items-center gap-2 group hover:bg-[#0876f8] p-2 rounded cursor-pointer transition"
+                >
+                  <img
+                    src="/images/dashboard.png"
+                    alt={`${text} Icon`}
+                    className="w-6 h-6 transition duration-200 group-hover:brightness-0 group-hover:invert"
+                  />
+                  <span className="transition-colors duration-200 group-hover:text-white">
+                    {text}
+                  </span>
+                </li>
+              )
+            )}
           </ul>
         </div>
       </div>
