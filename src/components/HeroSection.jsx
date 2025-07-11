@@ -2,7 +2,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="w-full bg-[#099A83] pt-8 pb-52 md:pb-60 lg:pb-64 relative">
+    <div className="w-full bg-[#099A83] pt-8 pb-52 md:pb-60 lg:pb-20 relative">
       {/* Content Wrapper */}
       <div className="w-full px-4 md:px-6 lg:px-10 max-w-[1280px] mx-auto">
         <p className="text-[12px] md:text-sm text-[#ffffff] mb-1">
@@ -18,7 +18,7 @@ const HeroSection = () => {
           </span>
         </div>
 
-        <h1 className="text-[24px] md:text-2xl lg:text-3xl text-[#ffffff] mt-4 mb-4 font-semibold leading-snug">
+        <h1 className="text-[24px] md:text-xl lg:text-3xl text-[#ffffff] mt-4 mb-4 font-semibold leading-snug">
          DP-100T01: Designing and Implementing a Data Science Solution<br/> on Azure(Data Scientist)
         </h1>
 
@@ -54,7 +54,7 @@ const HeroSection = () => {
       </div>
 
       {/* Floating Cards */}
-      <div className="absolute bottom-[-70px] left-0 w-full px-4 md:px-6 lg:px-10">
+      <div className="absolute bottom-[-70px] left-0 w-full px-4 md:px-3 lg:px-10">
         <div className="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Badge Card */}
           <div className="flex justify-between items-center p-4 md:p-6 bg-[#ffffff] rounded-md shadow-md">
