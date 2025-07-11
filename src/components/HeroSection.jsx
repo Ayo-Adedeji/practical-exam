@@ -33,7 +33,7 @@ const HeroSection = () => {
           <p>Your Attendance: 100%</p>
         </div>
 
-        <div className="flex flex-wrap gap-2 mt-8">
+        <div className="flex flex-wrap gap-2 mt-8 mb-8">
           {[
             "Last Day Evaluation",
             "Buy Exam",
@@ -45,7 +45,7 @@ const HeroSection = () => {
               key={i}
               className={`${
                 i === 0 ? "bg-[#0876F8] text-[#ffffff]" : "border text-[#ffffff]"
-              } text-[13px] md:text-[14px] px-3 py-1 rounded-md border`}
+              } text-[13px] md:text-[14px] px-3 py-1  rounded-md border`}
             >
               {text}
             </a>

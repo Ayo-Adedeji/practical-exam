@@ -5,10 +5,10 @@ const InstructorNotes = () => {
     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10">
       {/* Instructor Notes */}
       <div className="w-full">
-        <h1 className="text-[20px] [#181A53] md:text-xl font-semibold mb-4">
+        <h1 className="text-[20px] text-[#181A53] md:text-xl font-semibold mb-4">
           Instructor Notes
         </h1>
-        <div className="bg-[#ffffff] w-[525px] h-[456px] mb-12  shadow-md rounded-md border overflow-hidden">
+        <div className="bg-[#ffffff]  h-[456px]  mb-12  shadow-md rounded-md border overflow-hidden ">
           <div className="h-10 flex gap-4 border-b px-6 pt-2 ">
             <span className="text-[16px] text-[#888888] ">Day 1</span>
             <span className="text-[16px] text-[#888888] ">Day 2</span>
@@ -86,7 +86,7 @@ const InstructorNotes = () => {
                 <span className="text-[13px] bg-[#F1F1F1] px-3 py-1 rounded-2xl text-[#181A53] w-fit">
                   Starting in 7 days
                 </span>
-                <button className="w-[310px]  md:w-[250px] h-[36px] bg-[0876f8] border-2 border-[#0876F8] text-[#0876F8] rounded-lg text-[14px">
+                <button className="  md:w-[230px] h-[36px] sm:w-[220px] bg-[0876f8] border-2 border-[#0876F8] text-[#0876F8] rounded-lg text-[14px">
                   Register
                 </button>
               </div>
