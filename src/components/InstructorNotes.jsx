@@ -5,26 +5,26 @@ const InstructorNotes = () => {
     <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-6 px-4 md:px-10">
       {/* Instructor Notes */}
       <div className="w-full">
-        <h1 className="text-lg md:text-xl font-semibold mb-4">
+        <h1 className="text-[20px] [#181A53] md:text-xl font-semibold mb-4">
           Instructor Notes
         </h1>
-        <div className="bg-white w-full h-auto shadow-md rounded-md border overflow-hidden">
-          <div className="h-10 flex gap-4 border-b px-6 pt-2 text-sm text-gray-700">
-            <span>Day 1</span>
-            <span>Day 2</span>
-            <span>Day 3</span>
+        <div className="bg-[#ffffff] w-[525px] h-[456px] mb-12  shadow-md rounded-md border overflow-hidden">
+          <div className="h-10 flex gap-4 border-b px-6 pt-2 ">
+            <span className="text-[16px] text-[#888888] ">Day 1</span>
+            <span className="text-[16px] text-[#888888] ">Day 2</span>
+            <span className="text-[16px] text-[#888888] ">Day 3</span>
           </div>
-          <div className="px-6 py-4">
-            <h2 className="text-sm md:text-base font-semibold">
+          <div className="px-6 py-4 ">
+            <h2 className="text-[14px] text-[#181A53] md:text-base font-semibold">
               Course Outline
             </h2>
-            <ol className="text-sm md:text-[14px] mt-2 pl-4 list-decimal opacity-75">
-              <li>Get Started with Cisco Command-Line Interface (CLI)</li>
-              <li>Observe How a Switch Operates</li>
-              <li>Perform Basic Switch Configuration</li>
-              <li>Implement the Initial Switch Configuration</li>
-              <li>Inspect TCP/IP Applications</li>
-              <li>Configure an Interface on a Cisco Router</li>
+            <ol className="text-[14px] text-[#4d4d4d] md:text-[14px]  sm: mt-2 opacity-75">
+              <li>a. Get Started with Cisco Command-Line Interface (CLI)</li>
+              <li>b. Observe How a Switch Operates</li>
+              <li>c. Perform Basic Switch Configuration</li>
+              <li>d. Implement the Initial Switch Configuration</li>
+              <li>e. Inspect TCP/IP Applications</li>
+              <li>f. Configure an Interface on a Cisco Router</li>
             </ol>
           </div>
         </div>
@@ -32,14 +32,14 @@ const InstructorNotes = () => {
 
       {/* Recommended Learning Path */}
       <div className="w-full">
-        <h1 className="text-lg md:text-xl font-semibold mb-4">
+        <h1 className="text-[20px] [#181A53] md:text-xl font-semibold mb-4">
           Recommended Learning Path
         </h1>
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col">
           {[1, 2].map((_, index) => (
             <div
               key={index}
-              className="w-full bg-white shadow-md rounded-md p-4 md:p-6 border"
+              className="w-full bg-[#ffffff] shadow-md rounded-md p-4 md:p-6 border"
             >
               <div className="flex gap-2 text-sm mb-2">
                 <span className="text-[11px] bg-[#23E6ED] text-[#181A53] px-2 py-0.5 rounded">
@@ -50,13 +50,13 @@ const InstructorNotes = () => {
                 </span>
               </div>
 
-              <h2 className="text-sm font-semibold mb-2">
+              <h2 className="text-[14px] font-semibold mb-2">
                 DP-100T01: Designing and Implementing a Data Science Solution on
                 Azure (Data Scientist)
               </h2>
 
               <div className="flex flex-wrap gap-4 mb-2">
-                <small className="flex items-center gap-2 text-xs text-gray-600">
+                <small className="flex items-center gap-2 text-[14px] text-[#4d4d4d]">
                   <img
                     src="images/duration.png"
                     alt="duration"
@@ -64,7 +64,7 @@ const InstructorNotes = () => {
                   />
                   4.00 days (32 Hrs)
                 </small>
-                <small className="flex items-center gap-2 text-xs text-gray-600">
+                <small className="flex items-center gap-2 text-[14px] text-[#4d4d4d]">
                   <img src="images/vilt.png" alt="vilt" className="h-4 w-4" />
                   Virtual Instructor-Led
                 </small>
@@ -82,11 +82,11 @@ const InstructorNotes = () => {
                 3.5
               </div>
 
-              <div className="flex flex-col md:flex-row md:items-center justify-between gap-3">
-                <span className="text-xs bg-slate-500 px-3 py-1 rounded-2xl text-white w-fit">
+              <div className="flex flex-col justify-between md:flex-row md:items-center  gap-8">
+                <span className="text-[13px] bg-[#F1F1F1] px-3 py-1 rounded-2xl text-[#181A53] w-fit">
                   Starting in 7 days
                 </span>
-                <button className="w-full md:w-[240px] h-[36px] border-2 border-blue-500 rounded-lg text-sm">
+                <button className="w-[310px]  md:w-[250px] h-[36px] bg-[0876f8] border-2 border-[#0876F8] text-[#0876F8] rounded-lg text-[14px">
                   Register
                 </button>
               </div>

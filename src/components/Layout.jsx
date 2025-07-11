@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import Navbar from './Navbar';
+import React, { useState } from "react";
+import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
 const Layout = ({ children }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,11 +14,11 @@ const Layout = ({ children }) => {
 
       {/* Mobile Topbar */}
       <div className="md:hidden fixed top-0 left-0 w-full h-[64px] bg-white border-b-2 flex items-center justify-between px-4 z-50">
-        <img src="/images/NetCom.png" alt="Logo" className="w-[120px]" />
+        <img className="w-[120px]" src="/images/NetCom.png" alt="Logo"  />
         <div className="flex items-center gap-4">
-          <img src="/images/bell-icon.png" alt="bell" className="w-6 h-6" />
+          <img className="w-6 h-6" src="/images/bell-icon.png" alt="bell"  />
           <button onClick={() => setMobileMenuOpen(true)}>
-            <img src="/images/menu.png" alt="menu" className="w-6 h-6" />
+            <img className="w-6 h-6" src={"images/menu.svg"} alt="menu"  />
           </button>
         </div>
       </div>
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
           >
             <div className="flex justify-end mb-4">
               <button onClick={() => setMobileMenuOpen(false)}>
-                <img src="/images/close.png" alt="close" className="w-6 h-6" />
+                <img className="w-6 h-6" src={"/images/close.svg"} alt="close"  />
               </button>
             </div>
             <Sidebar />
